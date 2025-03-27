@@ -1,0 +1,1 @@
+from .reid_model import ReIDModel
