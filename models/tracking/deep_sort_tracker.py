@@ -80,7 +80,7 @@ class VehicleTracker:
         # 将跟踪结果转换为 [x1, y1, x2, y2, track_id, class_id]
         results = []
         for output in outputs:
-            x1, y1, w, h, track_id, class_id = output.tolist()
+            x1, y1, w, h, track_id, class_id = output
             x2, y2 = x1 + w, y1 + h
             results.append([x1, y1, x2, y2, track_id, class_id])
             
