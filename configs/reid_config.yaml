@@ -1,12 +1,11 @@
 MODEL:
   PRETRAIN_CHOICE: 'imagenet'
-  PRETRAIN_PATH: './weights/reid/resnext101_ibn_a-6ace051d.pth'
+  PRETRAIN_PATH: './weights/reid/resnext101_ibn_a_2.pth'
   METRIC_LOSS_TYPE: 'triplet'
   IF_LABELSMOOTH: 'off'
   IF_WITH_CENTER: 'no'
   NAME: 'resnext101_ibn_a'
   NO_MARGIN: True
-  DEVICE_ID: '0'
 
 INPUT:
   SIZE_TEST: [384, 384]

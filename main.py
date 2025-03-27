@@ -176,7 +176,7 @@ def main():
             continue
         camera_positions[camera_id] = config.get('position', (0, 0))
         
-    visualizer = Visualizer(map_size=(800, 600), camera_positions=camera_positions)
+    visualizer = Visualizer(map_size=(800, 100), camera_positions=camera_positions)
     
     # 创建ReID匹配器
     reid_matcher = ReIDMatcher(reid_model, distance_threshold=0.7, match_interval=5)
